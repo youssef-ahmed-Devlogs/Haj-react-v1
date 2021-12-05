@@ -1,0 +1,30 @@
+// =================* HOME PAGE *=================
+
+.home-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .hero-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .hero-img {
+      text-align: center;
+      img {
+        width: 250px;
+      }
+    }
+
+    .hero-links {
+      gap: 40px;
+      margin-top: 40px;
+
+      ul {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+      }
+    }
+  }
+}

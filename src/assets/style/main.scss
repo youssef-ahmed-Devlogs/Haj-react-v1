@@ -1,0 +1,133 @@
+@import "./components/colors";
+@import "./components/global";
+@import "./components/buttons";
+
+body {
+  font-family: "Cairo", sans-serif;
+}
+
+// =================* START HEADER *=================
+
+header {
+  background-color: #f1f1f1;
+  .header-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 40px;
+    padding-bottom: 30px;
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+
+      ul {
+        display: flex;
+        align-items: center;
+
+        a {
+          display: block;
+          margin-left: 20px;
+          font-weight: bold;
+          color: $gray-color;
+
+          &.active,
+          &:hover {
+            color: $primary-color;
+          }
+        }
+      }
+
+      .apps-icon {
+        font-size: 1.2rem;
+        cursor: pointer;
+        color: $gray-color;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+
+      & > div {
+        margin-left: 20px;
+        cursor: pointer;
+        color: $gray-color;
+        font-size: 1.2rem;
+
+        &:hover {
+          color: $primary-color;
+        }
+      }
+
+      .nav-langs {
+        display: flex;
+        align-items: center;
+        gap: 7px;
+
+        .lang-code {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// =================* END HEADER *=================
+
+// =================* START FOOTER *=================
+
+footer {
+  background-color: $Beige-color;
+  color: $gray-color;
+  padding-top: 30px;
+  padding-bottom: 30px;
+
+  .footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .your-country {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      select {
+        border: none;
+        background: none;
+        outline: none;
+        color: $primary-color;
+      }
+    }
+  }
+
+  .footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    .footer-social-links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-size: 1.2rem;
+
+      img {
+        width: 70px;
+      }
+    }
+  }
+
+  .footer-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+  }
+}
+
+// =================* END FOOTER *=================

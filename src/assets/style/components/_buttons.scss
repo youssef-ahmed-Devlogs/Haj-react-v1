@@ -1,0 +1,22 @@
+.button {
+  min-width: 150px;
+  min-height: 50px;
+  line-height: 50px;
+  display: block;
+  text-align: center;
+  transition: filter 0.4s ease-in-out;
+  color: $white-color;
+  border-radius: 25px;
+
+  &.button-secondary {
+    background-color: $secondary-color;
+  }
+
+  &.button-dark {
+    background-color: $dark-color;
+  }
+
+  &:hover {
+    filter: brightness(1.2);
+  }
+}

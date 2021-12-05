@@ -1,0 +1,47 @@
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1650px;
+  }
+}
+
+a {
+  text-decoration: none;
+  color: $gray-color;
+  font-weight: bold;
+  transition: 0.4s ease-in-out;
+
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.card-text {
+  color: $gray-color;
+  font-weight: bold;
+
+  & .hailight {
+    color: $primary-color;
+    font-size: 0.8rem;
+  }
+}
+
+.text-success {
+  color: $secondary-color;
+}
+
+.card {
+  border: none;
+  box-shadow: 0 0 5px rgba($color: #000000, $alpha: 0.2);
+  border-radius: 10px;
+}

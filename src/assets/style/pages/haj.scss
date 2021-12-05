@@ -1,0 +1,131 @@
+@import "../components/colors";
+
+.haj-page {
+  // Header Bottom Start
+
+  .header-bottom {
+    box-shadow: -11px 4px 6px rgba($color: #000000, $alpha: 0.1);
+    padding: 30px 10px;
+
+    .header-bottom_content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      .brand {
+        img {
+          width: 300px;
+        }
+      }
+    }
+  }
+
+  // Header Bottom End
+
+  .countdown {
+    background-image: linear-gradient(to right, $primary-color, #ffd581);
+    text-align: center;
+    max-width: 500px;
+    padding: 30px 10px;
+    border-radius: 10px;
+
+    .countdown-title {
+      font-weight: bold;
+      color: $white-color;
+    }
+
+    .countdown-items {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      .num {
+        font-size: 3.5rem;
+      }
+
+      .text {
+        transform: translateX(10px);
+      }
+
+      .num,
+      .text {
+        display: block;
+        color: $white-color;
+      }
+    }
+  }
+
+  .tabs-tabs {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+
+    li {
+      font-weight: bold;
+
+      a {
+        font-size: 1.2rem;
+
+        &.active {
+          color: $primary-color;
+          position: relative;
+
+          &::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 3px;
+            background-color: $primary-color;
+            left: 0;
+            bottom: -12px;
+          }
+        }
+      }
+    }
+  }
+
+  .tabs-content {
+    .list-styled {
+      padding-right: 20px;
+      li {
+        position: relative;
+        line-height: 1.8;
+
+        &::after {
+          content: "";
+          position: absolute;
+          right: -20px;
+          top: 50%;
+          transform: translateY(-50%);
+          width: 10px;
+          height: 10px;
+          border: 2px solid $primary-color;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .timing {
+    .card-v2 {
+      border: 1px solid $primary-color;
+      padding: 10px;
+      text-align: center;
+      color: $primary-color;
+      border-radius: 15px;
+
+      .card-icon {
+        font-size: 2rem;
+      }
+
+      .card-title {
+        font-weight: bold;
+      }
+
+      .card-text {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
